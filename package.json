@@ -1,0 +1,28 @@
+{
+  "name": "texas-solar-borrower-discovery",
+  "version": "0.1.0",
+  "description": "Human-assisted county public records intake and borrower extraction for UCC/PACE leads.",
+  "main": "src/main.js",
+  "author": "Clint C.",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "dist:win": "electron-builder --win portable nsis"
+  },
+  "dependencies": {
+    "exceljs": "^4.4.0",
+    "pdf-parse": "^1.1.1"
+  },
+  "devDependencies": {
+    "electron": "^35.0.0",
+    "electron-builder": "^26.0.12"
+  },
+  "build": {
+    "appId": "com.clint.texassolarborrower",
+    "productName": "Texas Solar Borrower Discovery",
+    "files": ["src/**/*", "config/**/*", "package.json", "README.md"],
+    "directories": {"output": "dist"},
+    "win": {"target": ["portable", "nsis"], "artifactName": "${productName}-${version}-${arch}.${ext}"},
+    "nsis": {"oneClick": false, "allowToChangeInstallationDirectory": true}
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "lenders": [
+    {"name":"GoodLeap","aliases":["GoodLeap","LoanPal","Loanpal LLC"]},
+    {"name":"Mosaic","aliases":["Mosaic","Solar Mosaic","Mosaic Solar Loan"]},
+    {"name":"Sunnova","aliases":["Sunnova","Sunnova Energy"]},
+    {"name":"Sunrun","aliases":["Sunrun","Sunrun Installation Services"]},
+    {"name":"Tesla","aliases":["Tesla Energy","Tesla, Inc.","SolarCity","Solar City"]},
+    {"name":"Dividend","aliases":["Dividend","Dividend Solar","Dividend Finance"]},
+    {"name":"Ygrene","aliases":["Ygrene","Ygrene Energy Fund"]},
+    {"name":"Renew Financial","aliases":["Renew Financial"]},
+    {"name":"EverBright","aliases":["EverBright","EverBright, LLC"]},
+    {"name":"LightReach","aliases":["LightReach"]},
+    {"name":"Service Finance","aliases":["Service Finance","Service Finance Company"]},
+    {"name":"Sunlight Financial","aliases":["Sunlight Financial"]},
+    {"name":"Enphase","aliases":["Enphase","Enphase Energy"]},
+    {"name":"SunPower","aliases":["SunPower","SunPower Financial"]},
+    {"name":"Salal Credit Union","aliases":["Salal Credit Union"]}
+  ]
+}

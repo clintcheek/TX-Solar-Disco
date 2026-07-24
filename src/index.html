@@ -1,0 +1,29 @@
+<!doctype html>
+<html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Texas Solar Borrower Discovery</title>
+<style>
+body{font-family:Segoe UI,Arial,sans-serif;margin:0;background:#f3f6f9;color:#17212b}.top{background:#17365d;color:white;padding:22px 30px}.top h1{margin:0;font-size:26px}.top p{margin:6px 0 0;opacity:.9}.wrap{padding:24px 30px;display:grid;grid-template-columns:1fr 1fr;gap:20px}.card{background:white;border:1px solid #dbe3ea;border-radius:10px;padding:20px;box-shadow:0 2px 8px #0000000d}.card h2{margin-top:0;font-size:18px}.full{grid-column:1/-1}.row{display:flex;gap:10px;margin:10px 0}.row input,.row select{flex:1;padding:10px;border:1px solid #bac7d3;border-radius:6px}.btn{border:0;border-radius:6px;padding:10px 14px;background:#1f6fb2;color:white;font-weight:600;cursor:pointer}.btn.secondary{background:#4c6072}.btn.start{font-size:18px;padding:13px 24px;background:#177245}.portal{display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid #edf1f4}.portal:last-child{border:0}.status{white-space:pre-wrap;background:#111827;color:#d1fae5;padding:14px;border-radius:7px;min-height:100px}.note{font-size:13px;color:#536575;line-height:1.45}.warn{background:#fff7d6;border-left:4px solid #d59c00;padding:12px;margin-top:12px}.footer{padding:0 30px 25px;color:#687887;font-size:12px}
+</style></head>
+<body>
+<div class="top"><h1>Texas Solar Borrower Discovery</h1><p>Human-assisted county portal intake → borrower-focused Excel output</p></div>
+<div class="wrap">
+  <div class="card">
+    <h2>1. Open a county portal</h2>
+    <div id="portals"></div>
+    <div class="warn note">The app does not bypass CAPTCHAs. Complete any CAPTCHA or access acknowledgement in your normal browser, then download permitted search results/documents into one folder.</div>
+  </div>
+  <div class="card">
+    <h2>2. Select downloaded records</h2>
+    <label>County</label>
+    <div class="row"><select id="county"></select></div>
+    <label>Input folder (PDF, TXT, CSV, JSON, HTML)</label>
+    <div class="row"><input id="inputFolder" readonly placeholder="Choose the folder containing downloaded records"><button class="btn secondary" id="chooseInput">Browse</button></div>
+    <label>Output folder</label>
+    <div class="row"><input id="outputFolder" readonly placeholder="Defaults to input folder"><button class="btn secondary" id="chooseOutput">Browse</button></div>
+    <button class="btn start" id="start">Extract and Build Excel</button>
+    <p class="note">Text-based PDFs are processed automatically. Scanned image-only PDFs require OCR and will be added in the next build.</p>
+  </div>
+  <div class="card full"><h2>Run status</h2><div class="status" id="status">Ready.</div></div>
+</div>
+<div class="footer">Output columns: NAME · ADDRESS · PHONE · EMAIL · LENDER NAME · LOAN TYPE · LOAN AMOUNT · LOAN DATE</div>
+<script src="renderer.js"></script></body></html>

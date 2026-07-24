@@ -1,0 +1,12 @@
+START HERE
+
+You do not need Python.
+
+The ZIP contains the complete starter application source and an automatic GitHub Windows build workflow.
+
+1. Upload the contents to a new GitHub repository.
+2. Click Actions > Build Windows App > Run workflow.
+3. Download the finished Windows artifact.
+4. Run the portable EXE.
+
+The first build is human-assisted: it opens county portals and processes the documents/results you download. It does not bypass CAPTCHAs.
